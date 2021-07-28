@@ -3,19 +3,28 @@
 using namespace std;
 
 int main() {
-	int N;
-	string B="666";
-	cin>>N;
-	if(N==1)
-	{
-		cout<<B;
-	}
-	else 
-	{
-		cout<<to_string(N-1)+B;
-	}
-	
-	
-	// your code goes here
-	return 0;
+    int N;
+    int a=0;
+    int counter=0;
+    
+    cin>>N;
+    while(1)
+    {
+        a++;
+        string str_a=to_string(a);
+    
+        if(str_a.find("666")!=string::npos)
+            {
+                counter++;
+                if(counter==N)
+                {
+                    cout<<a;
+                    return 0;
+                }
+        
+            }
+    
+        
+    }
+    return 0;
 }
