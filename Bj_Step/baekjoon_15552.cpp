@@ -3,14 +3,17 @@ using namespace std;
  
 int main() {
     int numLoof;
-	scanf("%d",&numLoof);
- 	for(int i=0;i<numLoof;i++)
- 	{
- 		int a,b;
- 		scanf("%d %d",&a,&b);
- 		printf("%d\n",a+b);
- 		
- 	}
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
  
- 	return 0;
- }
+    cin>>numLoof;
+    for(int i=0;i<numLoof;i++)
+    {
+        int a,b;
+        cin>>a>>b;
+        cout<<a+b<<'\n';
+    }
+ 
+    return 0;
+}
